@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTONIO MINA | Consultoria Imobiliária & Patrimonial de Alto Padrão</title>
+  <meta name="description" content="Curadoria exclusiva de imóveis de alto padrão e inteligência em valorização patrimonial com Antonio Mina.">
+
+  <!-- Google Fonts: Cinzel & Cormorant Garamond (Serifadas Clássicas) + Plus Jakarta Sans (Leitura Moderna) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Configuração Tailwind Customizada -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#0F2238',
+              light: '#173252',
+              dark: '#091524',
+            },
+            gold: {
+              DEFAULT: '#C5A059',
+              light: '#DFC07F',
+              dark: '#A8823D',
+              pale: '#F6EFE0',
+            },
+            ivory: '#F9F8F6',
+            warmgray: '#6B7280',
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 20px 40px -15px rgba(15, 34, 56, 0.12)',
+            'gold': '0 10px 25px -5px rgba(197, 160, 89, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Gradientes Dourados Metálicos Fiéis à Logo */
+    .bg-gold-metallic {
+      background: linear-gradient(135deg, #DFC07F 0%, #C5A059 50%, #A8823D 100%);
+    }
+    .bg-gold-metallic-hover:hover {
+      background: linear-gradient(135deg, #E8CE96 0%, #CFA960 50%, #B38B42 100%);
+    }
+    .text-gold-metallic {
+      background: linear-gradient(135deg, #DFC07F 0%, #C5A059 55%, #A8823D 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .border-gold-gradient {
+      border-image: linear-gradient(135deg, #DFC07F, #A8823D) 1;
+    }
+
+    /* Barra de rolagem elegante */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F9F8F6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0F2238;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C5A059;
+    }
+
+    /* Animação sutil para modais e cartões */
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.97) translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+    .animate-modal {
+      animation: fadeInScale 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="bg-ivory text-navy font-sans antialiased selection:bg-gold selection:text-white overflow-x-hidden">
+
+  <!-- ===================================================================== -->
+  <!-- 1. NAVBAR FIXO E ELEGANTE                                             -->
+  <!-- ===================================================================== -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-navy/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 lg:h-24">
+        
+        <!-- LOGO SVG CUSTOMIZADA FIEL À IMAGEM -->
+        <a href="#inicio" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Antonio Mina Início">
+          <!-- Ícone da Casa com Monograma e Seta de Valorização -->
+          <svg class="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 120 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="goldLogoGrad" x1="58" y1="15" x2="115" y2="95" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#E5C887"/>
+                <stop offset="50%" stop-color="#C5A059"/>
+                <stop offset="100%" stop-color="#9E7934"/>
+              </linearGradient>
+              <linearGradient id="navyLogoGrad" x1="10" y1="15" x2="60" y2="95" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#173354"/>
+                <stop offset="100%" stop-color="#0B1A2C"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Metade Esquerda: Azul Marinho Profundo (Telhado, Chaminé, Base e Monograma fluido A/M) -->
+            <path d="M58 14L12 47V57L22 50V92H58V84H34L54 57C56 54.5 58 55 58 58V64H64V48C64 43 58 41 53 46L31 76V43.5L58 24V14Z" fill="url(#navyLogoGrad)"/>
+            <!-- Chaminé -->
+            <path d="M27 23H35V33L27 38.5V23Z" fill="url(#navyLogoGrad)"/>
+            <!-- Detalhe interno do monograma fluido -->
+            <path d="M40 68C44 62 50 58 58 59V66C52 65.5 47 68 44 73H37L40 68Z" fill="url(#navyLogoGrad)"/>
+
+            <!-- Metade Direita: Dourado Metálico (Telhado direito, Estrutura e Seta Diagonal de Valorização) -->
+            <!-- Telhado superior direito -->
+            <path d="M58 14L93 39L87 46L58 25V14Z" fill="url(#goldLogoGrad)"/>
+            <!-- Parede direita e base direita -->
+            <path d="M87 56L95 49V92H61V84H86V56H87Z" fill="url(#goldLogoGrad)"/>
+            <!-- Seta de Crescimento / Valorização -->
+            <path d="M58 47L73 63L99 36L93 30L114 25L109 46L103 40L73 72L58 56V47Z" fill="url(#goldLogoGrad)"/>
+            <!-- Pequeno acento direito sob a seta -->
+            <path d="M95 49L102 54V62L95 57V49Z" fill="url(#goldLogoGrad)"/>
+          </svg>
+
+          <!-- Tipografia Oficial ANTONIO MINA -->
+          <div class="flex flex-col">
+            <span class="font-cinzel font-semibold text-lg sm:text-xl lg:text-[22px] tracking-[0.14em] text-navy leading-none">
+              ANTONIO MINA
+            </span>
+            <span class="text-[9px] sm:text-[10px] uppercase tracking-[0.28em] text-gold-dark font-semibold mt-1">
+              Alto Padrão & Patrimônio
+            </span>
+          </div>
+        </a>
+
+        <!-- Links de Navegação Desktop -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-navy/85">
+          <a href="#inicio" class="hover:text-gold transition-colors py-2">Início</a>
+          <a href="#imoveis" class="hover:text-gold transition-colors py-2">Imóveis em Destaque</a>
+          <a href="#consultoria" class="hover:text-gold transition-colors py-2">Consultoria & Investimentos</a>
+          <a href="#sobre" class="hover:text-gold transition-colors py-2">Sobre Antonio Mina</a>
+          <a href="#contato" class="hover:text-gold transition-colors py-2">Contato</a>
+        </nav>
+
+        <!-- Botão CTA Desktop & Menu Mobile -->
+        <div class="flex items-center gap-3">
+          <button onclick="openConsultoriaModal()" class="hidden sm:inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg border border-gold/30 group">
+            <span class="w-2 h-2 rounded-full bg-gold group-hover:scale-125 transition-transform"></span>
+            <span>Agendar Consultoria</span>
+          </button>
+
+          <!-- Botão Menu Mobile -->
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-lg text-navy hover:bg-navy/5 focus:outline-none" aria-label="Abrir menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Mobile Expandido -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-navy/10 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+      <a href="#inicio" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-lg text-navy font-medium hover:bg-ivory hover:text-gold transition-colors">Início</a>
+      <a href="#imoveis" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-lg text-navy font-medium hover:bg-ivory hover:text-gold transition-colors">Imóveis em Destaque</a>
+      <a href="#consultoria" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-lg text-navy font-medium hover:bg-ivory hover:text-gold transition-colors">Consultoria & Investimentos</a>
+      <a href="#sobre" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-lg text-navy font-medium hover:bg-ivory hover:text-gold transition-colors">Sobre Antonio Mina</a>
+      <a href="#contato" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-lg text-navy font-medium hover:bg-ivory hover:text-gold transition-colors">Contato</a>
+      <div class="pt-2">
+        <button onclick="toggleMobileMenu(); openConsultoriaModal();" class="w-full flex items-center justify-center gap-2 bg-gold-metallic text-navy font-bold py-3.5 rounded-lg shadow-gold">
+          <i data-lucide="calendar-check" class="w-4 h-4"></i>
+          <span>Agendar Consultoria Privativa</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 2. HERO SECTION (BANNER PRINCIPAL + BUSCA RÁPIDA INTERATIVA)          -->
+  <!-- ===================================================================== -->
+  <section id="inicio" class="relative pt-24 lg:pt-28 pb-16 lg:pb-24 min-h-[92vh] flex items-center bg-navy overflow-hidden">
+    <!-- Imagem de Fundo Arquitetura Contemporânea de Luxo -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=85" 
+        onerror="this.src='https://placehold.co/1920x1080/0F2238/C5A059?text=Antonio+Mina+Alto+Padrao'"
+        alt="Mansão contemporânea de alto padrão" 
+        class="w-full h-full object-cover object-center scale-105 opacity-45"
+      >
+      <!-- Degradê Azul Marinho Profundo -->
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy/90 to-navy/65"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-navy-dark/40"></div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="max-w-3xl">
+        <!-- Badge Superior -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-gold/40 text-gold-light text-xs font-semibold uppercase tracking-[0.2em] mb-6">
+          <i data-lucide="trending-up" class="w-4 h-4 text-gold"></i>
+          <span>Exclusividade, Solidez & Valorização Patrimonial</span>
+        </div>
+
+        <!-- Título Principal Persuasivo -->
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-[1.12] tracking-tight mb-6">
+          Arquitetura singular e <span class="text-gold-metallic italic font-bold">investimentos imobiliários</span> de alta performance.
+        </h1>
+
+        <p class="text-base sm:text-lg text-gray-200/90 font-light leading-relaxed max-w-2xl mb-10">
+          Curadoria rigorosa das propriedades mais nobres e oportunidades estratégicas de multiplicação de capital. Atendimento discreto, analítico e sob medida conduzido por <strong class="text-white font-medium">Antonio Mina</strong>.
+        </p>
+
+        <!-- Botões Rápidos Hero -->
+        <div class="flex flex-wrap items-center gap-4 mb-12">
+          <a href="#imoveis" class="inline-flex items-center gap-2.5 bg-gold-metallic bg-gold-metallic-hover text-navy-dark font-bold text-sm px-7 py-4 rounded-xl shadow-gold transition-all duration-300">
+            <span>Explorar Acervo Exclusivo</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+          <button onclick="openConsultoriaModal()" class="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/15 backdrop-blur-md text-white border border-white/25 font-medium text-sm px-7 py-4 rounded-xl transition-all duration-300">
+            <i data-lucide="shield-check" class="w-4 h-4 text-gold"></i>
+            <span>Consultoria Patrimonial</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Barra de Busca Rápida de Imóveis Interativa -->
+      <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-2xl border border-gold/25 max-w-5xl">
+        <div class="flex items-center justify-between mb-3 px-1">
+          <span class="text-xs font-bold uppercase tracking-wider text-navy/70 flex items-center gap-1.5">
+            <i data-lucide="search" class="w-3.5 h-3.5 text-gold"></i>
+            Busca Inteligente no Portfólio
+          </span>
+          <span class="text-xs text-warmgray hidden sm:inline">Filtre por perfil de moradia ou tese de investimento</span>
+        </div>
+
+        <form id="hero-search-form" onsubmit="handleHeroSearch(event)" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <!-- Tipo de Imóvel -->
+          <div class="flex flex-col">
+            <label for="hero-tipo" class="text-[11px] font-semibold uppercase tracking-wider text-warmgray mb-1.5 px-1">Tipo de Imóvel</label>
+            <select id="hero-tipo" class="w-full bg-ivory border border-navy/15 text-navy text-sm font-medium rounded-xl px-3.5 py-3 focus:outline-none focus:border-gold transition-colors">
+              <option value="todos">Todos os Tipos</option>
+              <option value="Terreno">Terreno / Condomínio</option>
+              <option value="Cobertura">Cobertura Duplex / Triplex</option>
+              <option value="Casa de Condomínio">Casa de Condomínio</option>
+              <option value="Apartamento Alto Padrão">Apartamento Alto Padrão</option>
+              <option value="Comercial">Corporativo / Comercial</option>
+            </select>
+          </div>
+
+          <!-- Finalidade -->
+          <div class="flex flex-col">
+            <label for="hero-finalidade" class="text-[11px] font-semibold uppercase tracking-wider text-warmgray mb-1.5 px-1">Finalidade</label>
+            <select id="hero-finalidade" class="w-full bg-ivory border border-navy/15 text-navy text-sm font-medium rounded-xl px-3.5 py-3 focus:outline-none focus:border-gold transition-colors">
+              <option value="todos">Compra & Investimento</option>
+              <option value="Residencial">Moradia de Alto Padrão</option>
+              <option value="Investimento">Investimento & Alta Liquidez</option>
+              <option value="Terrenos">Terrenos & Loteamentos</option>
+              <option value="Lançamentos">Lançamentos Exclusivos</option>
+            </select>
+          </div>
+
+          <!-- Faixa de Valor -->
+          <div class="flex flex-col">
+            <label for="hero-valor" class="text-[11px] font-semibold uppercase tracking-wider text-warmgray mb-1.5 px-1">Faixa de Investimento</label>
+            <select id="hero-valor" class="w-full bg-ivory border border-navy/15 text-navy text-sm font-medium rounded-xl px-3.5 py-3 focus:outline-none focus:border-gold transition-colors">
+              <option value="todos">Qualquer Valor</option>
+              <option value="ate-500k">Até R$ 500.000</option>
+              <option value="ate-1m">Até R$ 1.000.000</option>
+              <option value="ate-6m">Até R$ 6.000.000</option>
+              <option value="6m-12m">R$ 6M a R$ 12.000.000</option>
+              <option value="acima-12m">Acima de R$ 12.000.000</option>
+            </select>
+          </div>
+
+          <!-- Botão Filtrar -->
+          <div class="flex flex-col justify-end">
+            <button type="submit" class="w-full bg-navy hover:bg-navy-light text-white font-semibold text-sm py-3.5 px-5 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+              <i data-lucide="sliders-horizontal" class="w-4 h-4 text-gold"></i>
+              <span>Encontrar Imóveis</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 3. PORTFÓLIO DE IMÓVEIS EM DESTAQUE (INTERATIVO)                      -->
+  <!-- ===================================================================== -->
+  <section id="imoveis" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho da Seção -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold-dark block mb-2">Curadoria Privativa</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy">
+            Imóveis em Destaque
+          </h2>
+          <p class="text-warmgray mt-3 max-w-2xl text-sm sm:text-base">
+            Propriedades selecionadas pelos mais elevados critérios de arquitetura, localização nobre e sólido potencial de valorização patrimonial.
+          </p>
+        </div>
+
+        <!-- Busca em Tempo Real por Bairro ou Palavra-Chave -->
+        <div class="relative w-full lg:w-80">
+          <i data-lucide="search" class="w-4 h-4 text-warmgray absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+          <input 
+            type="text" 
+            id="realtime-search" 
+            oninput="filterProperties()"
+            placeholder="Buscar por bairro (ex: Jardins, Itaim)..." 
+            class="w-full bg-white border border-navy/15 rounded-xl pl-10 pr-4 py-3 text-sm text-navy placeholder-warmgray focus:outline-none focus:border-gold shadow-sm"
+          >
+        </div>
+      </div>
+
+      <!-- Abas de Filtro por Categoria -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pb-8 border-b border-navy/10 mb-10">
+        <div class="flex flex-wrap items-center gap-2" id="category-tabs">
+          <button onclick="setCategoryFilter('todos')" data-cat="todos" class="cat-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-navy text-white shadow-sm">
+            Todos os Imóveis
+          </button>
+          <button onclick="setCategoryFilter('Residencial')" data-cat="Residencial" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-navy hover:bg-navy/5 border border-navy/10">
+            Residencial
+          </button>
+          <button onclick="setCategoryFilter('Terrenos')" data-cat="Terrenos" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-navy hover:bg-navy/5 border border-navy/10">
+            Terrenos & Loteamentos
+          </button>
+          <button onclick="setCategoryFilter('Lançamentos')" data-cat="Lançamentos" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-navy hover:bg-navy/5 border border-navy/10">
+            Lançamentos
+          </button>
+          <button onclick="setCategoryFilter('Investimento')" data-cat="Investimento" class="cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-navy hover:bg-navy/5 border border-navy/10">
+            Investimento & ROI
+          </button>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span id="results-count" class="text-xs font-medium text-warmgray">Exibindo 7 propriedades exclusivas</span>
+          <button id="reset-filters-btn" onclick="resetAllFilters()" class="hidden text-xs font-semibold text-gold-dark hover:text-navy underline">
+            Limpar filtros
+          </button>
+        </div>
+      </div>
+
+      <!-- Grade de Cards de Imóveis -->
+      <div id="properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Renderizado dinamicamente via JavaScript -->
+      </div>
+
+      <!-- Estado Vazio (caso filtro não encontre) -->
+      <div id="empty-state" class="hidden text-center py-16 bg-white rounded-2xl border border-navy/10">
+        <div class="w-16 h-16 rounded-full bg-gold-pale text-gold-dark flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="building-2" class="w-8 h-8"></i>
+        </div>
+        <h3 class="font-serif text-2xl font-semibold text-navy mb-2">Nenhum imóvel com esses critérios exatos</h3>
+        <p class="text-warmgray text-sm max-w-md mx-auto mb-6">
+          Trabalhamos também com propriedades <em>off-market</em> (sigilosas) que não são publicadas abertamente.
+        </p>
+        <div class="flex justify-center gap-3">
+          <button onclick="resetAllFilters()" class="px-5 py-2.5 rounded-xl border border-navy/20 text-navy text-sm font-semibold hover:bg-ivory">
+            Ver Todo o Portfólio
+          </button>
+          <button onclick="openConsultoriaModal('Solicitação Off-Market')" class="px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-semibold hover:bg-navy-light">
+            Solicitar Busca Personalizada
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. DIFERENCIAIS & INTELIGÊNCIA IMOBILIÁRIA (CONCEITO DA LOGO)         -->
+  <!-- ===================================================================== -->
+  <section id="consultoria" class="py-20 lg:py-28 bg-navy text-white relative overflow-hidden">
+    <!-- Detalhe geométrico sutil ao fundo -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Cabeçalho Conceitual da Marca -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold block mb-3">A Filosofia Antonio Mina</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-5">
+            Onde a <span class="text-white underline decoration-gold/60 underline-offset-8">solidez patrimonial</span> encontra a <span class="text-gold-metallic italic">valorização estratégica</span>.
+          </h2>
+          <p class="text-gray-300 text-base leading-relaxed">
+            Assim como nossa marca une a estrutura arquitetônica em azul marinho à ascensão dourada, nossa consultoria transforma cada aquisição imobiliária em um ativo seguro, líquido e de alta rentabilidade.
+          </p>
+        </div>
+
+        <!-- Métricas de Autoridade -->
+        <div class="lg:col-span-5 grid grid-cols-3 gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+          <div class="text-center border-r border-white/10 pr-2">
+            <div class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-light">+R$ 480M</div>
+            <div class="text-[11px] sm:text-xs text-gray-300 mt-1">Em VGV Negociado</div>
+          </div>
+          <div class="text-center border-r border-white/10 px-2">
+            <div class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-light">+12 Anos</div>
+            <div class="text-[11px] sm:text-xs text-gray-300 mt-1">Mercado de Luxo</div>
+          </div>
+          <div class="text-center pl-2">
+            <div class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-light">100%</div>
+            <div class="text-[11px] sm:text-xs text-gray-300 mt-1">Sigilo & Curadoria</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Pilares Estratégicos -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Pilar 1 -->
+        <div class="bg-navy-light/60 border border-white/10 hover:border-gold/50 rounded-2xl p-8 transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="gem" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-white mb-3">Curadoria Exclusiva & Off-Market</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-5">
+            Acesso privilegiado a residências icônicas, coberturas e terrenos estratégicos — incluindo ativos confidenciais que não chegam aos portais convencionais.
+          </p>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i> Pré-seleção técnica e arquitetônica</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i> Visitas privadas e agendadas</li>
+          </ul>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="bg-navy-light/60 border border-gold/40 rounded-2xl p-8 transition-all duration-300 group shadow-xl relative">
+          <div class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded bg-gold/20 text-gold-light">
+            Diferencial Mina
+          </div>
+          <div class="w-14 h-14 rounded-xl bg-gold-metallic flex items-center justify-center text-navy-dark mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="trending-up" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-white mb-3">Análise de Valorização & ROI</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-5">
+            Estudo aprofundado de metro quadrado, histórico de liquidez do micro-bairro, projeção de ganho de capital e rentabilidade para locação corporativa ou revenda.
+          </p>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i> Dossiê comparativo de mercado</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i> Oportunidades na planta com alta alavancagem</li>
+          </ul>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="bg-navy-light/60 border border-white/10 hover:border-gold/50 rounded-2xl p-8 transition-all duration-300 group">
+          <div class="w-14 h-14 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="scale" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-white mb-3">Assessoria Jurídica & Negocial</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-5">
+            Condução firme e discreta nas negociações, aliada a <em>due diligence</em> imobiliária completa para garantir tranquilidade absoluta até a escritura definitiva.
+          </p>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i> Auditoria documental e certidões</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold"></i> Estruturação de permutas e pagamentos</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. SOBRE ANTONIO MINA                                                 -->
+  <!-- ===================================================================== -->
+  <section id="sobre" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Retrato / Imagem Institucional -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-luxury border border-gold/30 bg-navy aspect-[4/5] flex flex-col justify-between p-8 text-white">
+            <div class="flex items-center justify-between border-b border-white/10 pb-5">
+              <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold-light">Assinatura Executiva</span>
+              <i data-lucide="shield-check" class="w-5 h-5 text-gold"></i>
+            </div>
+            <div class="my-auto py-6">
+              <p class="font-serif italic text-2xl sm:text-3xl text-white/95 leading-snug mb-6">
+                "Discrição absoluta, análise criteriosa e foco em ativos que preservam e multiplicam patrimônio."
+              </p>
+              <div class="h-px w-16 bg-gold mb-4"></div>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Atendimento direto com curadoria de oportunidades residenciais e corporativas nas regiões mais valorizadas.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/10">
+              <p class="font-cinzel text-lg tracking-widest font-semibold text-white">ANTONIO MINA</p>
+              <p class="text-xs text-gold-light uppercase tracking-wider mt-0.5">Private Real Estate Broker • CRECI-SP 184.920-F</p>
+            </div>
+          </div>
+
+          <!-- Selo Flutuante Dourado -->
+          <div class="hidden sm:flex items-center gap-3 bg-navy text-white px-5 py-4 rounded-xl shadow-xl border border-gold/40 absolute -bottom-6 -right-6">
+            <div class="w-10 h-10 rounded-lg bg-gold-metallic flex items-center justify-center text-navy font-bold">
+              <i data-lucide="award" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-gold-light">Especialista Certificado</div>
+              <div class="text-xs text-gray-200">Gestão Patrimonial & Alto Padrão</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto Biográfico e Filosofia -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold-dark block mb-2">Trajetória & Compromisso</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy leading-tight mb-6">
+            Mais do que intermediar imóveis, construo decisões patrimoniais seguras.
+          </h2>
+
+          <div class="space-y-4 text-warmgray text-base leading-relaxed mb-8">
+            <p>
+              Com mais de uma década dedicada aos endereços mais valorizados de São Paulo — como <strong class="text-navy">Jardins, Itaim Bibi, Vila Nova Conceição e Alphaville</strong> —, Antonio Mina consolidou sua atuação pela união entre sensibilidade arquitetônica e rigor financeiro.
+            </p>
+            <p>
+              Cada cliente recebe um atendimento individualizado e confidencial. Seja na busca pela residência definitiva da família ou na alocação de capital em ativos imobiliários com alto potencial de valorização, cada etapa é conduzida com transparência, precisão técnica e profundo conhecimento de mercado.
+            </p>
+          </div>
+
+          <!-- Citação Assinada -->
+          <blockquote class="border-l-4 border-gold pl-5 py-2 mb-8 bg-ivory rounded-r-xl pr-5">
+            <p class="font-serif italic text-xl text-navy">
+              "Um grande imóvel não se define apenas pelo endereço, mas pela harmonia entre qualidade construtiva, liquidez futura e o estilo de vida que proporciona."
+            </p>
+            <footer class="font-cinzel text-xs font-semibold tracking-widest text-gold-dark mt-2">
+              — ANTONIO MINA
+            </footer>
+          </blockquote>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="https://wa.me/554899507039?text=Ol%C3%A1%20Antonio%20Mina%2C%20gostaria%20de%20falar%20diretamente%20com%20voc%C3%AA." target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-navy-light text-white font-semibold text-sm px-7 py-4 rounded-xl transition-all shadow-md flex items-center gap-2">
+              <span>Falar Diretamente com Antonio</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-gold"></i>
+            </a>
+            <span class="inline-flex items-center gap-2 text-navy font-semibold text-sm px-3 py-2 rounded-xl bg-ivory border border-navy/10">
+              <i data-lucide="phone" class="w-4 h-4 text-gold-dark"></i>
+              <span>(48) 9950-7039</span>
+            </span>
+            <a href="#contato" class="text-navy hover:text-gold-dark font-semibold text-sm px-4 py-3 transition-colors">
+              Avaliar Meu Imóvel →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. SIMULADOR DE VALORIZAÇÃO & CONTATO / AVALIAÇÃO                     -->
+  <!-- ===================================================================== -->
+  <section id="contato" class="py-20 lg:py-28 bg-ivory border-t border-navy/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold-dark block mb-2">Atendimento Exclusivo</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy mb-4">
+          Planeje seu Próximo Movimento Imobiliário
+        </h2>
+        <p class="text-warmgray text-sm sm:text-base">
+          Simule o potencial de valorização patrimonial ou solicite uma avaliação confidencial para compra, venda ou investimento.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Coluna Esquerda: Simulador Interativo de Valorização Patrimonial -->
+        <div class="lg:col-span-5 bg-navy text-white rounded-2xl p-7 sm:p-9 shadow-luxury flex flex-col justify-between border border-gold/25">
+          <div>
+            <div class="flex items-center gap-2.5 text-gold mb-3">
+              <i data-lucide="calculator" class="w-5 h-5"></i>
+              <span class="text-xs font-bold uppercase tracking-widest">Projeção de Patrimônio</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-semibold mb-2">Simulador de Valorização</h3>
+            <p class="text-gray-300 text-xs sm:text-sm mb-7">
+              Estime o crescimento patrimonial de um ativo imobiliário selecionado em regiões nobres.
+            </p>
+
+            <!-- Controle 1: Valor do Imóvel -->
+            <div class="mb-6">
+              <div class="flex justify-between text-xs mb-2">
+                <span class="text-gray-300">Valor do Imóvel / Aporte</span>
+                <span id="sim-valor-display" class="font-bold text-gold-light text-sm">R$ 5.000.000</span>
+              </div>
+              <input type="range" id="sim-valor" min="2000000" max="25000000" step="500000" value="5000000" oninput="updateSimulator()" class="w-full accent-gold cursor-pointer">
+              <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+                <span>R$ 2M</span>
+                <span>R$ 25M</span>
+              </div>
+            </div>
+
+            <!-- Controle 2: Horizonte de Tempo -->
+            <div class="mb-6">
+              <div class="flex justify-between text-xs mb-2">
+                <span class="text-gray-300">Horizonte de Investimento</span>
+                <span id="sim-anos-display" class="font-bold text-gold-light text-sm">5 anos</span>
+              </div>
+              <input type="range" id="sim-anos" min="1" max="10" step="1" value="5" oninput="updateSimulator()" class="w-full accent-gold cursor-pointer">
+              <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+                <span>1 ano</span>
+                <span>10 anos</span>
+              </div>
+            </div>
+
+            <!-- Controle 3: Perfil do Ativo -->
+            <div class="mb-7">
+              <label class="block text-xs text-gray-300 mb-2">Tese Imobiliária</label>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="setSimRate(0.095, this)" class="sim-rate-btn active bg-gold text-navy-dark font-bold text-xs py-2.5 px-3 rounded-lg transition-all">
+                  Pronto Alto Padrão (9,5% a.a.)
+                </button>
+                <button type="button" onclick="setSimRate(0.135, this)" class="sim-rate-btn bg-white/10 text-white hover:bg-white/15 font-medium text-xs py-2.5 px-3 rounded-lg transition-all">
+                  Lançamento / Planta (13,5% a.a.)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resultado da Simulação -->
+          <div class="bg-navy-dark/80 border border-gold/30 rounded-xl p-5">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs text-gray-300">Patrimônio Estimado Futuro:</span>
+              <span id="sim-gain-badge" class="text-[11px] font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded">+57%</span>
+            </div>
+            <div id="sim-resultado" class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-light">
+              R$ 7.871.193
+            </div>
+            <p class="text-[11px] text-gray-400 mt-2">
+              *Projeção referencial baseada no histórico de valorização e renda locatícia de imóveis prime.
+            </p>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Formulário de Contato & Avaliação -->
+        <div class="lg:col-span-7 bg-white rounded-2xl p-7 sm:p-10 shadow-luxury border border-navy/10">
+          <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-navy mb-2">Solicite Atendimento Privativo</h3>
+          <p class="text-warmgray text-sm mb-6">
+            Preencha seus dados abaixo. Retornaremos com absoluta discrição e agilidade.
+          </p>
+
+          <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-nome" class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1.5">Nome Completo *</label>
+                <input type="text" id="contact-nome" required placeholder="Seu nome" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-3 text-sm text-navy focus:outline-none focus:border-gold">
+              </div>
+              <div>
+                <label for="contact-telefone" class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1.5">Telefone / WhatsApp *</label>
+                <input type="tel" id="contact-telefone" required placeholder="(11) 99999-9999" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-3 text-sm text-navy focus:outline-none focus:border-gold">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-email" class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1.5">E-mail</label>
+                <input type="email" id="contact-email" placeholder="seuemail@dominio.com.br" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-3 text-sm text-navy focus:outline-none focus:border-gold">
+              </div>
+              <div>
+                <label for="contact-objetivo" class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1.5">Objetivo Principal</label>
+                <select id="contact-objetivo" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-3 text-sm text-navy focus:outline-none focus:border-gold">
+                  <option value="Comprar Imóvel de Alto Padrão">Comprar Imóvel de Alto Padrão</option>
+                  <option value="Investir / Alocação de Capital">Investir / Alocação de Capital</option>
+                  <option value="Avaliar e Vender Meu Imóvel">Avaliar e Vender Meu Imóvel</option>
+                  <option value="Agendar Reunião Presencial ou Online">Agendar Reunião Presencial ou Online</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-mensagem" class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1.5">Detalhes da sua busca ou imóvel</label>
+              <textarea id="contact-mensagem" rows="3" placeholder="Ex: Procuro cobertura ou apartamento acima de 280m² nos Jardins ou Itaim Bibi..." class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-3 text-sm text-navy focus:outline-none focus:border-gold"></textarea>
+            </div>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <span class="text-xs text-warmgray flex items-center gap-1.5">
+                <i data-lucide="lock" class="w-3.5 h-3.5 text-gold-dark"></i>
+                Seus dados são protegidos sob sigilo profissional.
+              </span>
+              <button type="submit" class="w-full sm:w-auto bg-gold-metallic bg-gold-metallic-hover text-navy-dark font-bold text-sm px-8 py-4 rounded-xl shadow-gold transition-all flex items-center justify-center gap-2">
+                <span>Enviar Solicitação</span>
+                <i data-lucide="send" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Feedback Visual Imediato após Envio -->
+          <div id="contact-success" class="hidden mt-6 p-5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm">Solicitação recebida com sucesso!</h4>
+                <p class="text-xs text-emerald-800 mt-1">
+                  Obrigado pelo contato. Antonio Mina analisará seu perfil e entrará em contato em breve pelo WhatsApp ou telefone informado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canais Diretos -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-navy/10 text-xs">
+            <div class="flex items-center gap-2.5 text-navy">
+              <div class="w-8 h-8 rounded-lg bg-ivory flex items-center justify-center text-gold-dark">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-warmgray">Telefone / WhatsApp</div>
+                <div class="font-semibold">(11) 99482-7100</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 text-navy">
+              <div class="w-8 h-8 rounded-lg bg-ivory flex items-center justify-center text-gold-dark">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-warmgray">E-mail Privativo</div>
+                <div class="font-semibold">contato@antoniomina.com.br</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 text-navy">
+              <div class="w-8 h-8 rounded-lg bg-ivory flex items-center justify-center text-gold-dark">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-warmgray">Escritório</div>
+                <div class="font-semibold">Av. Brigadeiro Faria Lima, SP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. RODAPÉ SOFISTICADO (FOOTER)                                        -->
+  <!-- ===================================================================== -->
+  <footer class="bg-navy-dark text-white pt-16 pb-10 border-t border-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Logo e Descrição -->
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3.5 mb-5">
+            <!-- Versão Clara/Dourada da Logo SVG -->
+            <svg class="w-11 h-11 flex-shrink-0" viewBox="0 0 120 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="goldFooterGrad" x1="58" y1="15" x2="115" y2="95" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#E5C887"/>
+                  <stop offset="50%" stop-color="#C5A059"/>
+                  <stop offset="100%" stop-color="#9E7934"/>
+                </linearGradient>
+              </defs>
+              <!-- Lado esquerdo em Branco Nobre no fundo escuro -->
+              <path d="M58 14L12 47V57L22 50V92H58V84H34L54 57C56 54.5 58 55 58 58V64H64V48C64 43 58 41 53 46L31 76V43.5L58 24V14Z" fill="#F9F8F6"/>
+              <path d="M27 23H35V33L27 38.5V23Z" fill="#F9F8F6"/>
+              <path d="M40 68C44 62 50 58 58 59V66C52 65.5 47 68 44 73H37L40 68Z" fill="#F9F8F6"/>
+              <!-- Lado direito Dourado Metálico -->
+              <path d="M58 14L93 39L87 46L58 25V14Z" fill="url(#goldFooterGrad)"/>
+              <path d="M87 56L95 49V92H61V84H86V56H87Z" fill="url(#goldFooterGrad)"/>
+              <path d="M58 47L73 63L99 36L93 30L114 25L109 46L103 40L73 72L58 56V47Z" fill="url(#goldFooterGrad)"/>
+              <path d="M95 49L102 54V62L95 57V49Z" fill="url(#goldFooterGrad)"/>
+            </svg>
+            <div>
+              <span class="font-cinzel font-semibold text-xl tracking-[0.15em] text-white block leading-none">
+                ANTONIO MINA
+              </span>
+              <span class="text-[10px] uppercase tracking-[0.26em] text-gold-light font-medium mt-1 block">
+                Consultoria Imobiliária
+              </span>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-5">
+            Excelência na intermediação de imóveis residenciais de alto padrão, coberturas icônicas e investimentos imobiliários com foco em segurança e valorização patrimonial.
+          </p>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-gray-300">
+            <i data-lucide="shield" class="w-3.5 h-3.5 text-gold"></i>
+            <span>CRECI-SP 184.920-F • CNAI 34.812</span>
+          </div>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="lg:col-span-3">
+          <h4 class="font-cinzel text-sm font-semibold tracking-widest text-gold-light uppercase mb-4">Navegação</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li><a href="#inicio" class="hover:text-gold transition-colors">Início</a></li>
+            <li><a href="#imoveis" class="hover:text-gold transition-colors">Imóveis em Destaque</a></li>
+            <li><a href="#consultoria" class="hover:text-gold transition-colors">Consultoria & Investimentos</a></li>
+            <li><a href="#sobre" class="hover:text-gold transition-colors">Sobre Antonio Mina</a></li>
+            <li><a href="#contato" class="hover:text-gold transition-colors">Avaliar Meu Imóvel</a></li>
+          </ul>
+        </div>
+
+        <!-- Regiões de Atuação -->
+        <div class="lg:col-span-4">
+          <h4 class="font-cinzel text-sm font-semibold tracking-widest text-gold-light uppercase mb-4">Regiões Prime</h4>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">Santo Amaro da Imperatriz</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">Jardins</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">Itaim Bibi</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">Vila Nova Conceição</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">Cidade Jardim</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">Alphaville</span>
+          </div>
+          <p class="text-xs text-gray-400">
+            Atendimento mediante agendamento prévio no escritório da Av. Brigadeiro Faria Lima, São Paulo - SP.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Direitos Autorais -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© 2026 ANTONIO MINA Consultoria Imobiliária. Todos os direitos reservados.</p>
+        <p class="text-gray-500">Valores e disponibilidades sujeitos a alteração sem aviso prévio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- BOTÃO FLUTUANTE WHATSAPP                                              -->
+  <!-- ===================================================================== -->
+  <a 
+    href="https://wa.me/554899507039?text=Ol%C3%A1%20Antonio%20Mina%2C%20gostaria%20de%20uma%20consultoria%20imobili%C3%A1ria%20de%20alto%20padr%C3%A3o." 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Falar com Antonio Mina no WhatsApp"
+    class="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-sm px-4 py-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group"
+  >
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+    <span class="hidden sm:inline pr-1">Falar com Antonio</span>
+  </a>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: DETALHES COMPLETOS DO IMÓVEL + SIMULADOR DE INVESTIMENTO     -->
+  <!-- ===================================================================== -->
+  <div id="property-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 bg-navy-dark/80 backdrop-blur-sm overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-4xl w-full shadow-2xl overflow-hidden animate-modal my-auto border border-gold/30">
+      
+      <!-- Topo do Modal -->
+      <div class="flex items-center justify-between px-6 py-4 bg-navy text-white">
+        <div class="flex items-center gap-2">
+          <span id="modal-tag" class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-gold text-navy-dark">Exclusivo</span>
+          <span id="modal-code" class="text-xs text-gray-300">Ref: AM-101</span>
+        </div>
+        <button onclick="closePropertyModal()" class="p-1.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors" aria-label="Fechar modal">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Conteúdo Rolável -->
+      <div class="max-h-[82vh] overflow-y-auto">
+        <!-- Galeria de Fotos -->
+        <div class="relative bg-navy-dark">
+          <img id="modal-main-img" src="" alt="Foto do imóvel" class="w-full h-64 sm:h-96 object-cover">
+          <!-- Miniaturas da Galeria -->
+          <div id="modal-thumbnails" class="flex gap-2 p-3 bg-navy/90 overflow-x-auto">
+            <!-- Thumbnails via JS -->
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8">
+          <!-- Título, Bairro e Preço -->
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-6 border-b border-navy/10">
+            <div>
+              <div class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-gold-dark mb-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span id="modal-location">Jardins, São Paulo</span>
+              </div>
+              <h3 id="modal-title" class="font-serif text-2xl sm:text-3xl font-semibold text-navy">Cobertura Duplex Contemporânea</h3>
+            </div>
+            <div class="md:text-right">
+              <span class="text-xs text-warmgray block">Valor de Investimento</span>
+              <span id="modal-price" class="font-cinzel text-2xl sm:text-3xl font-bold text-navy">R$ 14.500.000</span>
+            </div>
+          </div>
+
+          <!-- Especificações Principais -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 border-b border-navy/10">
+            <div class="bg-ivory p-3.5 rounded-xl text-center">
+              <i data-lucide="maximize-2" class="w-5 h-5 text-gold-dark mx-auto mb-1"></i>
+              <div id="modal-area" class="font-bold text-navy text-sm">420 m²</div>
+              <div class="text-[11px] text-warmgray">Área Privativa</div>
+            </div>
+            <div class="bg-ivory p-3.5 rounded-xl text-center">
+              <i data-lucide="bed-double" class="w-5 h-5 text-gold-dark mx-auto mb-1"></i>
+              <div id="modal-suites" class="font-bold text-navy text-sm">4 Suítes</div>
+              <div class="text-[11px] text-warmgray">Dormitórios</div>
+            </div>
+            <div class="bg-ivory p-3.5 rounded-xl text-center">
+              <i data-lucide="car" class="w-5 h-5 text-gold-dark mx-auto mb-1"></i>
+              <div id="modal-vagas" class="font-bold text-navy text-sm">5 Vagas</div>
+              <div class="text-[11px] text-warmgray">Garagem</div>
+            </div>
+            <div class="bg-ivory p-3.5 rounded-xl text-center">
+              <i data-lucide="trending-up" class="w-5 h-5 text-gold-dark mx-auto mb-1"></i>
+              <div id="modal-roi" class="font-bold text-emerald-700 text-sm">+11,8% a.a.</div>
+              <div class="text-[11px] text-warmgray">Valorização Est.</div>
+            </div>
+          </div>
+
+          <!-- Descrição e Diferenciais -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 py-6">
+            <div class="lg:col-span-7">
+              <h4 class="font-serif text-xl font-semibold text-navy mb-3">Sobre a Propriedade</h4>
+              <p id="modal-desc" class="text-warmgray text-sm leading-relaxed mb-5"></p>
+              
+              <h5 class="text-xs font-bold uppercase tracking-wider text-navy mb-3">Diferenciais Exclusivos</h5>
+              <ul id="modal-features" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-navy/85">
+                <!-- Lista via JS -->
+              </ul>
+            </div>
+
+            <!-- Mini Calculadora de Financiamento / Valorização do Imóvel -->
+            <div class="lg:col-span-5 bg-ivory border border-navy/10 rounded-2xl p-5 flex flex-col justify-between">
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-gold-dark block mb-1">Análise Financeira Rápida</span>
+                <h4 class="font-serif text-lg font-semibold text-navy mb-4">Simulação para este Ativo</h4>
+                
+                <div class="space-y-3 text-xs">
+                  <div class="flex justify-between py-1.5 border-b border-navy/10">
+                    <span class="text-warmgray">Valor por m²:</span>
+                    <span id="modal-sqm-price" class="font-bold text-navy">R$ 34.523 / m²</span>
+                  </div>
+                  <div class="flex justify-between py-1.5 border-b border-navy/10">
+                    <span class="text-warmgray">Entrada Sugerida (30%):</span>
+                    <span id="modal-downpayment" class="font-bold text-navy">R$ 4.350.000</span>
+                  </div>
+                  <div class="flex justify-between py-1.5 border-b border-navy/10">
+                    <span class="text-warmgray">Projeção em 3 Anos:</span>
+                    <span id="modal-3yr-value" class="font-bold text-emerald-700">R$ 20.260.000</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 space-y-2.5">
+                <a id="modal-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="w-full bg-gold-metallic bg-gold-metallic-hover text-navy-dark font-bold text-xs sm:text-sm py-3.5 px-4 rounded-xl shadow-gold flex items-center justify-center gap-2 transition-all">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>Falar com Antonio sobre este Imóvel</span>
+                </a>
+                <button onclick="scheduleVisitFromModal()" class="w-full bg-navy hover:bg-navy-light text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl transition-all">
+                  Agendar Visita Privativa
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: AGENDAMENTO DE CONSULTORIA PRIVATIVA                         -->
+  <!-- ===================================================================== -->
+  <div id="consultoria-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-navy-dark/80 backdrop-blur-sm">
+    <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl overflow-hidden animate-modal border border-gold/40">
+      <div class="bg-navy px-6 py-5 flex items-center justify-between text-white">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-gold-light block">Atendimento Personalizado</span>
+          <h3 class="font-serif text-2xl font-semibold">Agendar Consultoria</h3>
+        </div>
+        <button onclick="closeConsultoriaModal()" class="p-1.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/10">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 sm:p-7">
+        <form id="modal-consultoria-form" onsubmit="handleModalConsultoriaSubmit(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1">Assunto / Interesse</label>
+            <input type="text" id="modal-assunto" value="Consultoria Imobiliária & Patrimonial" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-2.5 text-sm font-medium text-navy focus:outline-none focus:border-gold">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1">Seu Nome *</label>
+            <input type="text" id="modal-nome" required placeholder="Nome completo" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-gold">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1">WhatsApp / Telefone *</label>
+            <input type="tel" id="modal-tel" required placeholder="(11) 99999-9999" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-gold">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-navy mb-1">Preferência de Atendimento</label>
+            <select id="modal-formato" class="w-full bg-ivory border border-navy/15 rounded-xl px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-gold">
+              <option value="Videoconferência Privativa">Videoconferência Privativa (Zoom / Meet)</option>
+              <option value="Reunião Presencial (Faria Lima)">Reunião Presencial (Escritório Faria Lima)</option>
+              <option value="Contato via WhatsApp">Atendimento Executivo via WhatsApp</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full bg-gold-metallic bg-gold-metallic-hover text-navy-dark font-bold text-sm py-3.5 rounded-xl shadow-gold transition-all mt-2">
+            Confirmar Solicitação de Agenda
+          </button>
+        </form>
+
+        <div id="modal-consultoria-success" class="hidden text-center py-6">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="check-circle-2" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-serif text-2xl font-semibold text-navy mb-1">Agenda Solicitada!</h4>
+          <p class="text-xs text-warmgray mb-5">
+            Antonio Mina recebeu sua solicitação e entrará em contato para confirmar o melhor horário.
+          </p>
+          <button onclick="closeConsultoriaModal()" class="px-6 py-2.5 rounded-xl bg-navy text-white text-xs font-semibold">
+            Concluir
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT: DADOS DO PORTFÓLIO, FILTROS, MODAIS E SIMULADOR           -->
+  <!-- ===================================================================== -->
+  <script>
+    // Banco de Dados Curado de Imóveis de Alto Padrão
+    const propertiesData = [
+      {
+        id: 1,
+        code: "AM-904",
+        title: "Cobertura Duplex Jardim América",
+        type: "Cobertura",
+        category: "Residencial",
+        tag: "Exclusivo",
+        location: "Jardins, São Paulo",
+        price: 16800000,
+        area: 480,
+        suites: 4,
+        vagas: 6,
+        roiAnnual: 0.115,
+        roiLabel: "+11,5% a.a.",
+        images: [
+          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+        ],
+        description: "Cobertura duplex assinada por renomado escritório de arquitetura no coração do Jardim América. Living com pé-direito duplo, terraço gourmet com piscina privativa aquecida e vista panorâmica definitiva para a copa das árvores.",
+        features: [
+          "Piscina privativa com borda infinita",
+          "Elevador privativo com biometria",
+          "Automação residencial integral",
+          "Adega climatizada para 400 garrafas",
+          "Suíte master com closet duplo e sala de banho",
+          "Gerador full para toda a unidade"
+        ]
+      },
+      {
+        id: 2,
+        code: "AM-812",
+        title: "Residência Contemporânea Tamboré",
+        type: "Casa de Condomínio",
+        category: "Residencial",
+        tag: "Pronto para Morar",
+        location: "Alphaville, Barueri",
+        price: 11900000,
+        area: 690,
+        suites: 5,
+        vagas: 6,
+        roiAnnual: 0.102,
+        roiLabel: "+10,2% a.a.",
+        images: [
+          "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=85"
+        ],
+        description: "Projeto arquitetônico contemporâneo em concreto aparente, madeira natural e panos de vidro do piso ao teto. Integração total entre living, espaço gourmet, jardim paisagístico e área de lazer privativa em condomínio de altíssima segurança.",
+        features: [
+          "Terreno de 850 m² com privacidade total",
+          "Cinema privativo acústico",
+          "Energia fotovoltaica instalada",
+          "Piscina com raia de 18 metros e spa",
+          "Aspiração central e ar-condicionado VRF",
+          "Dependência completa para funcionários"
+        ]
+      },
+      {
+        id: 3,
+        code: "AM-745",
+        title: "Apartamento Neoclássico Vila Nova",
+        type: "Apartamento Alto Padrão",
+        category: "Investimento",
+        tag: "Alto Potencial de Valorização",
+        location: "Vila Nova Conceição, São Paulo",
+        price: 9450000,
+        area: 315,
+        suites: 4,
+        vagas: 4,
+        roiAnnual: 0.128,
+        roiLabel: "+12,8% a.a.",
+        images: [
+          "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+        ],
+        description: "A poucos passos do Parque Ibirapuera, este apartamento reúne planta inteligente, iluminação natural abundante e altíssima liquidez. Excelente oportunidade tanto para moradia quanto para renda patrimonial qualificada.",
+        features: [
+          "A 300 metros do Parque Ibirapuera",
+          "Varanda gourmet envidraçada",
+          "Piso em madeira cumaru maciça",
+          "Lazer completo padrão clube",
+          "Portaria blindada 24h",
+          "Depósito privativo no subsolo"
+        ]
+      },
+      {
+        id: 4,
+        code: "AM-930",
+        title: "Palazzo Faria Lima — Lançamento Boutique",
+        type: "Apartamento Alto Padrão",
+        category: "Lançamentos",
+        tag: "Lançamento Exclusivo",
+        location: "Itaim Bibi, São Paulo",
+        price: 7800000,
+        area: 245,
+        suites: 3,
+        vagas: 4,
+        roiAnnual: 0.145,
+        roiLabel: "+14,5% a.a.",
+        images: [
+          "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85"
+        ],
+        description: "Torre única com apenas uma unidade por andar no epicentro financeiro de São Paulo. Condições diferenciadas de fluxo durante a obra com forte curva de valorização projetada até a entrega das chaves.",
+        features: [
+          "1 apartamento por andar (privacidade absoluta)",
+          "Fluxo de pagamento facilitado na obra",
+          "Infraestrutura para carros elétricos",
+          "Wellness center, pilates e sauna seca",
+          "Fachada ventilada com isolamento termoacústico",
+          "Concierge internacional"
+        ]
+      },
+      {
+        id: 5,
+        code: "AM-619",
+        title: "Laje Corporativa Triple A Faria Lima",
+        type: "Comercial",
+        category: "Investimento",
+        tag: "Renda & Valorização",
+        location: "Itaim Bibi, São Paulo",
+        price: 13200000,
+        area: 520,
+        suites: 0,
+        vagas: 12,
+        roiAnnual: 0.119,
+        roiLabel: "+11,9% a.a.",
+        images: [
+          "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=85"
+        ],
+        description: "Andar corrido em edifício corporativo Triple A com certificação LEED Gold. Ativo imobiliário sólido para investidores que buscam contratos atípicos de locação com family offices, fundos e multinacionais.",
+        features: [
+          "Certificação internacional LEED Gold",
+          "Piso elevado e forro modular acústico",
+          "Heliponto homologado no edifício",
+          "12 vagas demarcadas com manobrista",
+          "Auditório e salas de reunião no condomínio",
+          "Alta demanda de locação corporativa"
+        ]
+      },
+      {
+        id: 6,
+        code: "AM-882",
+        title: "Garden Privativo Cidade Jardim",
+        type: "Apartamento Alto Padrão",
+        category: "Lançamentos",
+        tag: "Exclusivo",
+        location: "Cidade Jardim, São Paulo",
+        price: 5650000,
+        area: 260,
+        suites: 3,
+        vagas: 3,
+        roiAnnual: 0.132,
+        roiLabel: "+13,2% a.a.",
+        images: [
+          "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1200&q=85"
+        ],
+        description: "A sensação de morar em uma casa suspensa com a segurança de um condomínio-clube de alto luxo. Amplo jardim privativo com paisagismo assinado e acesso direto às facilidades do complexo.",
+        features: [
+          "Jardim privativo de 85 m²",
+          "Pé-direito de 3,10m livre",
+          "Quadra de tênis oficial e spa",
+          "Segurança perimetral armada 24h",
+          "Acesso exclusivo ao Shopping Cidade Jardim",
+          "Entrega prevista em 14 meses"
+        ]
+      },
+      {
+        id: 7,
+        code: "AM-951",
+        title: "Terreno em Condomínio Fechado com Cachoeira",
+        type: "Terreno",
+        category: "Terrenos",
+        categories: ["Terrenos", "Investimento"],
+        tag: "Natureza & Condomínio Fechado",
+        location: "Santo Amaro da Imperatriz, SC",
+        price: 200000,
+        area: 1000,
+        suites: 0,
+        vagas: 4,
+        roiAnnual: 0.142,
+        roiLabel: "+14,2% a.a.",
+        images: [
+          "df96e998-b722-4954-8710-6d44377b9364.jpg",
+          "df96e998-b722-4954-8710-6d44377b9364_2.jpg",
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85",
+          "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85"
+        ],
+        description: "Excelente terreno de 1.000 m² em condomínio fechado cercado por mata nativa, encostas verdes e acesso a cachoeira em Santo Amaro da Imperatriz. Ideal para construir casa de campo, refúgio de fim de semana ou investimento de valorização a R$ 200/m².",
+        features: [
+          "Área total de 1.000 m² em condomínio fechado",
+          "Acesso a cachoeira e área verde preservada",
+          "R$ 200/m² com alto potencial de valorização",
+          "Vista panorâmica para serra e encostas",
+          "Ideal para residência de campo ou lazer",
+          "Região de natureza e tranquilidade em Santo Amaro"
+        ]
+      }
+    ];
+
+    // Estado Atual dos Filtros
+    let activeCategory = 'todos';
+    let heroFilters = {
+      tipo: 'todos',
+      finalidade: 'todos',
+      valor: 'todos'
+    };
+    let currentSelectedProperty = null;
+    let simAnnualRate = 0.095;
+
+    // Formatação Monetária BRL
+    function formatBRL(value) {
+      return value.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+        maximumFractionDigits: 0
+      });
+    }
+
+    // Renderizar Cards de Imóveis
+    function renderProperties(list) {
+      const grid = document.getElementById('properties-grid');
+      const emptyState = document.getElementById('empty-state');
+      const countLabel = document.getElementById('results-count');
+
+      grid.innerHTML = '';
+
+      if (list.length === 0) {
+        grid.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        countLabel.textContent = '0 propriedades encontradas';
+        return;
+      }
+
+      grid.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      countLabel.textContent = `Exibindo ${list.length} ${list.length === 1 ? 'propriedade exclusiva' : 'propriedades exclusivas'}`;
+
+      list.forEach(prop => {
+        const specsDorm = prop.suites > 0
+          ? `${prop.suites} Suítes`
+          : (prop.type === 'Terreno' ? 'Com Cachoeira' : 'Laje Corp.');
+        const card = document.createElement('article');
+        card.className = 'bg-white rounded-2xl overflow-hidden shadow-luxury border border-navy/10 hover:border-gold/60 transition-all duration-300 flex flex-col group';
+
+        card.innerHTML = `
+          <!-- Imagem & Badges -->
+          <div class="relative h-64 overflow-hidden bg-navy cursor-pointer" onclick="openPropertyModal(${prop.id})">
+            <img 
+              src="${prop.images[0]}" 
+              onerror="this.src='https://placehold.co/800x600/0F2238/C5A059?text=${encodeURIComponent(prop.title)}'"
+              alt="${prop.title}" 
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-navy/20"></div>
+            
+            <!-- Tag Status -->
+            <span class="absolute top-4 left-4 bg-navy/90 backdrop-blur-md text-gold-light border border-gold/40 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-lg">
+              ${prop.tag}
+            </span>
+
+            <!-- Indicador de Valorização -->
+            <span class="absolute top-4 right-4 bg-white/95 text-navy text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center gap-1 shadow-sm">
+              <i data-lucide="trending-up" class="w-3.5 h-3.5 text-gold-dark"></i>
+              ${prop.roiLabel}
+            </span>
+
+            <!-- Localização sobre a foto -->
+            <div class="absolute bottom-3.5 left-4 right-4 flex items-center justify-between text-white">
+              <span class="text-xs font-medium flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold"></i>
+                ${prop.location}
+              </span>
+              <span class="text-[11px] text-gray-200 bg-black/40 px-2 py-0.5 rounded">${prop.code}</span>
+            </div>
+          </div>
+
+          <!-- Corpo do Card -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] font-semibold uppercase tracking-wider text-gold-dark mb-1">${prop.type}</div>
+              <h3 onclick="openPropertyModal(${prop.id})" class="font-serif text-2xl font-semibold text-navy group-hover:text-gold-dark transition-colors cursor-pointer leading-snug mb-4">
+                ${prop.title}
+              </h3>
+
+              <!-- Especificações -->
+              <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-ivory rounded-xl text-xs text-navy/85 mb-5 border border-navy/5">
+                <div class="flex items-center justify-center gap-1.5 font-medium">
+                  <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-gold-dark"></i>
+                  <span>${prop.area} m²</span>
+                </div>
+                <div class="flex items-center justify-center gap-1.5 font-medium border-x border-navy/10">
+                  <i data-lucide="bed-double" class="w-3.5 h-3.5 text-gold-dark"></i>
+                  <span>${specsDorm}</span>
+                </div>
+                <div class="flex items-center justify-center gap-1.5 font-medium">
+                  <i data-lucide="car" class="w-3.5 h-3.5 text-gold-dark"></i>
+                  <span>${prop.vagas} Vagas</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Preço e Botão Ver Detalhes -->
+            <div class="pt-4 border-t border-navy/10 flex items-center justify-between gap-3">
+              <div>
+                <span class="text-[11px] text-warmgray block">Investimento</span>
+                <span class="font-cinzel text-lg sm:text-xl font-bold text-navy">${formatBRL(prop.price)}</span>
+              </div>
+              <button onclick="openPropertyModal(${prop.id})" class="bg-navy hover:bg-gold-metallic hover:text-navy-dark text-white text-xs font-bold px-4 py-3 rounded-xl transition-all duration-300 flex items-center gap-1.5 shadow-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    // Filtrar Imóveis Combinando Busca Hero + Abas + Campo de Texto
+    function filterProperties() {
+      const searchText = document.getElementById('realtime-search').value.toLowerCase().trim();
+      const resetBtn = document.getElementById('reset-filters-btn');
+
+      const hasActiveFilters = 
+        activeCategory !== 'todos' || 
+        heroFilters.tipo !== 'todos' || 
+        heroFilters.finalidade !== 'todos' || 
+        heroFilters.valor !== 'todos' || 
+        searchText !== '';
+
+      if (hasActiveFilters) {
+        resetBtn.classList.remove('hidden');
+      } else {
+        resetBtn.classList.add('hidden');
+      }
+
+      const filtered = propertiesData.filter(prop => {
+        const propCategories = prop.categories || [prop.category];
+
+        // Filtro por aba de categoria
+        if (activeCategory !== 'todos' && !propCategories.includes(activeCategory)) {
+          return false;
+        }
+
+        // Filtro Hero: Tipo de Imóvel
+        if (heroFilters.tipo !== 'todos' && prop.type !== heroFilters.tipo) {
+          return false;
+        }
+
+        // Filtro Hero: Finalidade
+        if (heroFilters.finalidade !== 'todos' && !propCategories.includes(heroFilters.finalidade)) {
+          return false;
+        }
+
+        // Filtro Hero: Faixa de Valor
+        if (heroFilters.valor === 'ate-500k' && prop.price > 500000) return false;
+        if (heroFilters.valor === 'ate-1m' && prop.price > 1000000) return false;
+        if (heroFilters.valor === 'ate-6m' && prop.price > 6000000) return false;
+        if (heroFilters.valor === '6m-12m' && (prop.price < 6000000 || prop.price > 12000000)) return false;
+        if (heroFilters.valor === 'acima-12m' && prop.price <= 12000000) return false;
+
+        // Busca em Tempo Real (Título, Bairro, Descrição, Diferenciais ou Código)
+        if (searchText) {
+          const matchTitle = prop.title.toLowerCase().includes(searchText);
+          const matchLocation = prop.location.toLowerCase().includes(searchText);
+          const matchCode = prop.code.toLowerCase().includes(searchText);
+          const matchType = prop.type.toLowerCase().includes(searchText);
+          const matchDesc = prop.description.toLowerCase().includes(searchText);
+          const matchFeatures = (prop.features || []).some(f => f.toLowerCase().includes(searchText));
+          if (!matchTitle && !matchLocation && !matchCode && !matchType && !matchDesc && !matchFeatures) return false;
+        }
+
+        return true;
+      });
+
+      renderProperties(filtered);
+    }
+
+    // Clique nas Abas de Categoria
+    function setCategoryFilter(category) {
+      activeCategory = category;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.cat === category) {
+          btn.className = 'cat-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-navy text-white shadow-sm';
+        } else {
+          btn.className = 'cat-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-navy hover:bg-navy/5 border border-navy/10';
+        }
+      });
+      filterProperties();
+    }
+
+    // Submissão da Busca Rápida na Hero Section
+    function handleHeroSearch(e) {
+      e.preventDefault();
+      heroFilters.tipo = document.getElementById('hero-tipo').value;
+      heroFilters.finalidade = document.getElementById('hero-finalidade').value;
+      heroFilters.valor = document.getElementById('hero-valor').value;
+
+      // Sincroniza aba visual se finalidade específica for escolhida
+      if (heroFilters.finalidade !== 'todos') {
+        setCategoryFilter(heroFilters.finalidade);
+      } else {
+        setCategoryFilter('todos');
+      }
+
+      // Rola suavemente até a grade de imóveis
+      document.getElementById('imoveis').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Limpar Todos os Filtros
+    function resetAllFilters() {
+      heroFilters = { tipo: 'todos', finalidade: 'todos', valor: 'todos' };
+      document.getElementById('hero-tipo').value = 'todos';
+      document.getElementById('hero-finalidade').value = 'todos';
+      document.getElementById('hero-valor').value = 'todos';
+      document.getElementById('realtime-search').value = '';
+      setCategoryFilter('todos');
+    }
+
+    // =====================================================================
+    // MODAL DE DETALHES DO IMÓVEL
+    // =====================================================================
+    function openPropertyModal(id) {
+      const prop = propertiesData.find(p => p.id === id);
+      if (!prop) return;
+      currentSelectedProperty = prop;
+
+      document.getElementById('modal-tag').textContent = prop.tag;
+      document.getElementById('modal-code').textContent = `Ref: ${prop.code}`;
+      document.getElementById('modal-location').textContent = prop.location;
+      document.getElementById('modal-title').textContent = prop.title;
+      document.getElementById('modal-price').textContent = formatBRL(prop.price);
+      document.getElementById('modal-area').textContent = `${prop.area} m²`;
+      document.getElementById('modal-suites').textContent = prop.suites > 0
+        ? `${prop.suites} Suítes`
+        : (prop.type === 'Terreno' ? 'Cond. Fechado' : 'Corporativo');
+      document.getElementById('modal-vagas').textContent = `${prop.vagas} Vagas`;
+      document.getElementById('modal-roi').textContent = prop.roiLabel;
+      document.getElementById('modal-desc').textContent = prop.description;
+
+      // Cálculos Financeiros do Imóvel
+      const sqmPrice = Math.round(prop.price / prop.area);
+      const downpayment = prop.price * 0.30;
+      const value3Yr = prop.price * Math.pow(1 + prop.roiAnnual, 3);
+
+      document.getElementById('modal-sqm-price').textContent = `${formatBRL(sqmPrice)} / m²`;
+      document.getElementById('modal-downpayment').textContent = formatBRL(downpayment);
+      document.getElementById('modal-3yr-value').textContent = formatBRL(value3Yr);
+
+      // Galeria Principal e Miniaturas
+      const mainImg = document.getElementById('modal-main-img');
+      mainImg.src = prop.images[0];
+
+      const thumbsContainer = document.getElementById('modal-thumbnails');
+      thumbsContainer.innerHTML = '';
+      prop.images.forEach((imgUrl, index) => {
+        const thumb = document.createElement('button');
+        thumb.type = 'button';
+        thumb.className = `relative h-14 w-24 rounded-lg overflow-hidden flex-shrink-0 border-2 transition-all ${index === 0 ? 'border-gold' : 'border-transparent opacity-70 hover:opacity-100'}`;
+        thumb.innerHTML = `<img src="${imgUrl}" alt="Miniatura ${index + 1}" class="w-full h-full object-cover">`;
+        thumb.onclick = () => {
+          mainImg.src = imgUrl;
+          thumbsContainer.querySelectorAll('button').forEach(b => {
+            b.classList.remove('border-gold');
+            b.classList.add('border-transparent', 'opacity-70');
+          });
+          thumb.classList.add('border-gold');
+          thumb.classList.remove('border-transparent', 'opacity-70');
+        };
+        thumbsContainer.appendChild(thumb);
+      });
+
+      // Lista de Diferenciais
+      const featuresList = document.getElementById('modal-features');
+      featuresList.innerHTML = '';
+      prop.features.forEach(feat => {
+        const li = document.createElement('li');
+        li.className = 'flex items-center gap-2';
+        li.innerHTML = `<i data-lucide="check-circle-2" class="w-4 h-4 text-gold-dark flex-shrink-0"></i><span>${feat}</span>`;
+        featuresList.appendChild(li);
+      });
+
+      // Link Direto WhatsApp Personalizado
+      const waText = encodeURIComponent(`Olá Antonio Mina! Tenho interesse no imóvel "${prop.title}" (${prop.code} - ${prop.location}) no valor de ${formatBRL(prop.price)}. Gostaria de mais informações.`);
+      document.getElementById('modal-whatsapp-link').href = `https://wa.me/5511994827100?text=${waText}`;
+
+      const modal = document.getElementById('property-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closePropertyModal() {
+      const modal = document.getElementById('property-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function scheduleVisitFromModal() {
+      const propTitle = currentSelectedProperty ? `${currentSelectedProperty.title} (${currentSelectedProperty.code})` : 'Imóvel Exclusivo';
+      closePropertyModal();
+      openConsultoriaModal(`Visita Privativa: ${propTitle}`);
+    }
+
+    // =====================================================================
+    // MODAL DE AGENDAMENTO DE CONSULTORIA
+    // =====================================================================
+    function openConsultoriaModal(assunto = 'Consultoria Imobiliária & Patrimonial') {
+      document.getElementById('modal-assunto').value = assunto;
+      document.getElementById('modal-consultoria-form').classList.remove('hidden');
+      document.getElementById('modal-consultoria-success').classList.add('hidden');
+
+      const modal = document.getElementById('consultoria-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeConsultoriaModal() {
+      const modal = document.getElementById('consultoria-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function handleModalConsultoriaSubmit(e) {
+      e.preventDefault();
+      document.getElementById('modal-consultoria-form').classList.add('hidden');
+      document.getElementById('modal-consultoria-success').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    // =====================================================================
+    // SIMULADOR INTERATIVO DE VALORIZAÇÃO PATRIMONIAL
+    // =====================================================================
+    function setSimRate(rate, btnElement) {
+      simAnnualRate = rate;
+      document.querySelectorAll('.sim-rate-btn').forEach(btn => {
+        btn.className = 'sim-rate-btn bg-white/10 text-white hover:bg-white/15 font-medium text-xs py-2.5 px-3 rounded-lg transition-all';
+      });
+      btnElement.className = 'sim-rate-btn active bg-gold text-navy-dark font-bold text-xs py-2.5 px-3 rounded-lg transition-all';
+      updateSimulator();
+    }
+
+    function updateSimulator() {
+      const valor = parseFloat(document.getElementById('sim-valor').value);
+      const anos = parseInt(document.getElementById('sim-anos').value, 10);
+
+      document.getElementById('sim-valor-display').textContent = formatBRL(valor);
+      document.getElementById('sim-anos-display').textContent = anos === 1 ? '1 ano' : `${anos} anos`;
+
+      const valorFuturo = valor * Math.pow(1 + simAnnualRate, anos);
+      const ganhoPercentual = Math.round(((valorFuturo - valor) / valor) * 100);
+
+      document.getElementById('sim-resultado').textContent = formatBRL(valorFuturo);
+      document.getElementById('sim-gain-badge').textContent = `+${ganhoPercentual}%`;
+    }
+
+    // =====================================================================
+    // FORMULÁRIO PRINCIPAL DE CONTATO & MENU MOBILE
+    // =====================================================================
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const successBox = document.getElementById('contact-success');
+      successBox.classList.remove('hidden');
+      e.target.reset();
+      lucide.createIcons();
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Fechar modais com tecla ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closePropertyModal();
+        closeConsultoriaModal();
+      }
+    });
+
+    // Inicialização ao carregar a página
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProperties(propertiesData);
+      updateSimulator();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
